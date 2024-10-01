@@ -1,0 +1,26 @@
+Little Sister’s Vocabulary (strings)
+Add a prefix to a word
+    Add the prefix “un” to words
+    Define the add_prefix_un(word)
+    Takes the word and returns un(word)
+    Could we not just do return “un” + word with concatenation?
+Add prefixes to word groups
+    There is an array with the prefix, then the word we’re to affix the prefix too. Apply the prefix to the word in a new array
+    Define make_word_groups(vocab_words)
+    Take the vocab words ([pre, word_1, word_2, etc]), then return a string with the prefix applied to each word
+    Must look like: '<prefix> :: <prefix><word_1> :: <prefix><word_2> :: <prefix><word_n>'
+    Most likely can use join in this situation. Join from index one and continue forward (return array[0].join(array[1:]))
+Remove a suffix from a word
+    Suffixes need to be removed so we can return to the root word.
+    Define remive_suffix_ness(word)
+    Take the word and remove the ‘ness’ from it.
+    Note, if the word ends with ‘i’ bow, change it to a ‘y.’
+    Could take the nord out at -4: using -1 based index
+    That’s the new word. And when the new word’s length-1 == ‘i,’ make the word[word.length-1] = ‘y’
+Extract and transform a word
+    Extract an adj from a sentence and turn it into a verb. These words are regular and don’t need any spelling changes
+    Define the adjective_to_verb(sentence, index) function
+    Params: sentence (the vocab word), index (the index of the word we’re trying to get)
+    So a lot of this has been done for us. 
+    For step one, we could split the words first, then split them again at their index (array.split. array.split()[index])
+    Step 2 is to concat the word from the end (length - 1) and + ‘en’ to it
