@@ -10,6 +10,7 @@ Add prefixes to word groups
     Take the vocab words ([pre, word_1, word_2, etc]), then return a string with the prefix applied to each word
     Must look like: '<prefix> :: <prefix><word_1> :: <prefix><word_2> :: <prefix><word_n>'
     Most likely can use join in this situation. Join from index one and continue forward (return array[0].join(array[1:]))
+    Correction: No need to remove prefix
 Remove a suffix from a word
     Suffixes need to be removed so we can return to the root word.
     Define remive_suffix_ness(word)
