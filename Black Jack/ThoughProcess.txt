@@ -1,0 +1,45 @@
+Python:
+
+Black Jack (Comparisons):
+Notes:
+
+Implementing rules in Black Jack (how the game is played and scored)
+A = Ace, J = Jack, Q = Queen, K = King
+1. Calc the suit of a card
+    With scoring, J, Q, and K are worth 10 points
+    Numbers are worth their number
+    A is 1 or 11, w/e the player chose. For now, it should be 1.
+    Define the value_of_cards(card) function
+    Para: card (will be a string)
+    Return: int (the value that the card has)
+    Later, we’ll make a function that sees if ace will be 1 or 11
+    Should we use convert to for the numbers, then an if statement for the named cards?
+Determine which card has a higher value
+    Define a higher_card(card_one, card_two) function
+    Return which card has the highest value
+    If both values = each other, return them both (tuple: return value_one, value_two)
+    Solve: 
+    Use the first method to find their values, compare them, then return that using an if statement?
+    Put the numbers in different values, convert the values to numbers.
+    If one number is larger, use an if statement to say, “if this value is bigger, return the OG value. If both are the same size, return both OG values”
+Calc the value of an ace
+    Note: players use aces to try to get as close to, but not over 21 as possible (if the cards in your hand = 20, you’d make your ace 1)
+    Define the value_of_ace(card_one, card_two) function
+    Note: these are the cards already in your hand
+    Decide if the upcoming ace is going to be a 1 or 11.
+    Note: if we already have an ace in hand, the value of the upcoming ace would be one 
+    Simple if statement? Add the 2 card values together. If sum + 11 > 21, or the value of one of the cards is “A” return 1. If not, return 11.
+Determine a “Natural” or “Blackjack” hand
+    Blackjack hand: the player is dealt an ace with a 10 card (Q, K, J)
+    Define is_blackjack(card_one, card_two)
+    See if the two-card hand is a blackjack. Return true or false
+    We have to see if only one card in the hand is a 10 (K, Q, J) with an A, so ask if card one or 2 is A, if not then false. If it is, ask if card one or two is K, Q, or J
+Splitting pairs
+    Note: if the first 2 cards are the same value (2 sixes or a J and Q), you can treat them as separate hands (split pair)
+    Define can_split_pairs(card_one, card_two)
+    See if the 2 card hand can be split into 2 pairs. Return true of false.
+    Should be a comparison problem? If card is a K, Q, or J and the other one is too, return true. If not, convert the numbers, and see if card_one == card_two. Return true of false
+Doubling Down
+    Double down: if 2 OG cards dealt total 9, 10, or 11 points, players can make an additional bet = to their OG bet (9 and A(1) would be a double down, but 10 and 2 would not).
+    Define can_double_down(car_one, card_two)
+    See if the cards added up are between 9 and 11. Return true or false
