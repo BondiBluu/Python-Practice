@@ -1,0 +1,12 @@
+Capitalize the title of the paper
+    Capitalize the title of this paper.
+    Use capitalize_title(title) to take a string and capitalize the first letter of each word.
+Check if each sentence ends with a period
+    Check if the punctuation is correct.
+    Use the check_sentencce_ending(sentence) to make sure the sentence ends with a period.
+    Clean up spacing
+    The paper needs to be spaced out correctly.
+    Use clean_up_spacing(sentence) that removes whitespace at the beginning and end of the sentences. Return the new updated strings.
+Replace words with a synonym
+    Replace some simple words with better synonyms
+    Use replace_word_choice(sentence, old_word, new_word) that replaces all instances of the old word with the new one. Return a new string.
