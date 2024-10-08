@@ -10,7 +10,6 @@ def capitalize_title(title):
 
     return title.title()
 
-    pass
 
 
 def check_sentence_ending(sentence):
@@ -22,7 +21,6 @@ def check_sentence_ending(sentence):
 
     return sentence.endswith('.')
 
-    pass
 
 
 def clean_up_spacing(sentence):
@@ -33,8 +31,6 @@ def clean_up_spacing(sentence):
     """
 
     return sentence.strip(' ')
-
-    pass
 
 
 def replace_word_choice(sentence, old_word, new_word):
@@ -47,5 +43,3 @@ def replace_word_choice(sentence, old_word, new_word):
     """
 
     return sentence.replace(old_word, new_word)
-
-    pass
