@@ -1,0 +1,22 @@
+Put together small functions that track tasks.
+Tracking poker rounds
+Use the function get_rounds(round_number) that takes the current round number and returns a list with both that number, and the next two numbers after that.
+Possibility: Return a list that contains the first number, the first number + 1, and the first number + 2?
+Keeping all rounds in the same place
+Use the function concatenate_rounds(round_1, round_2) to take two lists and return a single one, consisting of both the rounds given.
+Possibility: simple concatenation: round_1 + round_2
+Finding prior rounds
+Use the method list_contains_round(rounds, round_number). See if, anywhere in the rounds, lies the round number. Return true or false.
+Possibility: can’t use .contains, but python does have “in.” Check that against the list.
+Averaging card values
+Use the function card_average(hand) to add all in the list and divide it by the length.
+Possibility: simple adding up the numbers using “sum” and dividing it by the length of numbers in the list
+Alternate averages
+Use the function approx_average_is_average(hand). Return a boolean based on:
+If the average of the first and last number in the list matches the actual average
+If the median of the hand equals the actual average
+More averaging techniques
+Use the function average_even_is_average_odd(hand) that returns a bool seeing if the average of the cards at even indexes is the same as the average card at odd indexes
+Bonus round rules
+Use the function maybe_double_last(hand) that takes the hand and checks if the last card is a Jack (11). If it is, return the list with that last Jack Doubled in value.
+If hand[-1] == 11, double it
