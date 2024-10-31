@@ -1,0 +1,32 @@
+There are 2 queues for a ride. Write code to better manage the guests at the park
+Add me to the queue
+    Define add_me_to_the_queue(express_queue, normal_queue, ticket_type, person_name)
+    Return the appropriate queue updated with the person’s name
+    ticket_type: an int. 1 is express_queue and 0 is normal_queue
+    Append, according to the queue type, then return that list
+Where are my friends
+    Define find_my_friend(queue, friend_name)
+    Return the pos in the queue of the person's name
+    Queue: the list of ppl standing at the queue
+    friend_name: name of the friend whose index you need to find
+    Most likely using “contains,” but since contains isn’t an option, and we’re trying to find only the index, “index” will most likely be used
+Can I please join them
+    Define add_me_with_my_friends(queue, index, person_name)
+    Return the queue updated with the late arrival’s name
+    Insert would most likely be used here, since it’s placing a name at a specified position
+Mean person in queue
+    Define remove_the_mean_person(queue, person_name)
+    Return the queue updated without the mean person’s name
+    Most likely using “remove” keyword
+Namefellows
+    Define how_many_fellows(queue, person_name)
+    Return the number of occurrences with that person’s name in the queue, as a list
+    Count, since it sees how many of an item are in the list
+Remove the last person
+    Define remove_the_last_person(queue)
+    Update the list while returning the name of the person who was removed (the last person)
+    Pop, but since we need to remove the last index and return it, we could pop(-1) or pop(len(queue-1)) 
+Sort the queue list
+    Define sorted_names(queue)
+    Return a sorted copy of the list
+    Simple sort should do
