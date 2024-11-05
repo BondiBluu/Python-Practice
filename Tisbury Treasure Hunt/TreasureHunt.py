@@ -7,6 +7,8 @@ def get_coordinate(record):
     """
     tupled_record = tuple(record)
     return tupled_record[-1]
+
+
 def convert_coordinate(coordinate):
     """Split the given coordinate into tuple containing its individual components.
  
@@ -15,6 +17,8 @@ def convert_coordinate(coordinate):
     """
     tupled_coordinate = tuple(coordinate)
     return tupled_coordinate
+
+
 def compare_records(azara_record, rui_record):
     """Compare two record types and determine if their coordinates match.
  
@@ -24,6 +28,8 @@ def compare_records(azara_record, rui_record):
     """
     azara_tuple = tuple(azara_record[1])
     return azara_tuple == rui_record[1]
+
+
 def create_record(azara_record, rui_record):
     """Combine the two record types (if possible) and create a combined record group.
  
@@ -35,6 +41,8 @@ def create_record(azara_record, rui_record):
         return azara_record + rui_record
     else:
         return 'not a match' 
+    
+
 def clean_up(combined_record_group):
     """Clean up a combined record group into a multi-line string of single records.
  
