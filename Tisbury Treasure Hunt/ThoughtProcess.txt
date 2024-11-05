@@ -1,0 +1,18 @@
+Problem: organize treasure hunt information
+Extract coordinates
+Define get_coordinate(treasure, coordinate) and return only the extracted map coordinate 
+Format coordinates
+Define convert_coordinate() and takes the format of a coordinate and returns a certain format
+Match coordinates
+Define compare_record() 
+Take a (treasure, coordinate) pair and (location, coordinate, quadrant) record from each.
+Return true if the coordinate match
+Reformat the coordinates as needed for an accurate comparison
+Combine matched records
+Define create_record()
+Take a (treasure, coordinate) pair and (location, coordinate, quadrant) record and return (treasure, coordinate, location, coordinate, quadrant) ONLY IF the coordinates match.
+If they don’t match, return “not a match”
+Reformat the coordinates as needed for an accurate comparison
+“Clean up” & make a report of all records
+Define clean_up() 
+Take a tuple of tuples (everything from both lists), looping through the outer tuple, dropping the unwanted coordinates from each inner tuple a and adding each to a ‘report’
